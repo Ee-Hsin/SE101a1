@@ -86,6 +86,12 @@ int main(const int argc, const char* const argv[]) {
   float y3;
  
   /* Process inputs */
+
+  if (argc < 7){
+    printf("You must enter 6 arguments");
+    return -1;
+  }
+
   x1 = atof(argv[1]);
   y1 = atof(argv[2]);
   x2 = atof(argv[3]);
